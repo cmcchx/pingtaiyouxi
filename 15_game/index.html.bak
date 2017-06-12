@@ -6,11 +6,17 @@
 
 <body>
 	<SCRIPT LANGUAGE="JavaScript"> 
-
+		document.write("user:");
         document.write(decodeURIComponent(location.search.substr(5))); 
 
     </SCRIPT> 
+	<input type="button" id="look" value="chakan"/>
+	<script type="look/javascript">
+	$("#look").click(function(){
+		alert("hello");
+	});
+	</script>
   <script>
-    runGame(GAME_LEVELS, DOMDisplay);
+    runGame(GAME_LEVELS, DOMDisplay,decodeURIComponent(location.search.substr(5)));
   </script>
 </body>

@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>±í¸ñ</title>
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font: italic 20px Georgia, serif;
+            letter-spacing: normal;
+            background-color: #f0f0f0;
+        }
+        #content{
+            width: 750px;
+            padding: 40px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-left: 30px solid #1D81B6;
+            border-right: 1px solid #ddd;
+            box-shadow: 0px 0px 16px #aaa;
+        }
+        #table1{
+            font: bold 16px/1.4em "Trebuchet MS", sans-serif;
+			padding:center;
+			
+        }
+        #table1 thead th{
+            padding: 15px;
+            border: 1px solid #93CE37;
+            border-bottom: 3px solid #9ED929;
+            text-shadow: 1px 1px 1px #568F23;
+            color: #fff;
+            background-color: #9DD929;
+            border-radius: 5px 5px 0px 0px;
+        }
+        #table1 thead th:empty{
+            background-color: transparent;
+            border: none;
+        }
+        #table1 tbody th{
+            padding: 0px 10px;
+            border: 1px solid #93CE37;
+			border-left: 10px solid #9ED929;
+            border-right: 10px solid #9ED929;
+            text-shadow: 1px 1px 1px #568F23;
+            color: #666;
+            background-color: #9DD929;
+            border-radius: 5px 0px 0px 5px;
+        }
+        #table1 tbody td{
+            padding: 50px;
+            border: 2px solid #E7EFE0;
+            text-align: center;
+            text-shadow: 1px 1px 1px #fff;
+            color: #666;
+            background-color: #DEF3CA;
+            border-radius: 2px;
+        }
+        #table1 tbody span.check::before{
+            content: url(images/check0.png);
+        }
+       
+    </style>
+</head>
+<body>
+<script src="code/chapter/15_game.js"></script>
+<script src="code/game_levels.js"></script>
+<div id="content">
+    <table id="table1">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col" abbr="Starter">id</th>
+                <th scope="col" abbr="Medium">name</th>
+                <th scope="col" abbr="Business">level</th>
+                <th scope="col" abbr="Deluxe">time</th>
+            </tr>
+        </thead>
+        <tbody id= "table-body">
+            <tr>
+                <th scope="row">NO.1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">NO.2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">NO.3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">NO.4</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">NO.5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">NO.6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+			 <tr>
+                <th scope="row">NO.7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+			 <tr>
+                <th scope="row">NO.8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+			 <tr>
+                <th scope="row">NO.9</th>
+               <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+			 <tr>
+                <th scope="row">NO.10</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript"> 
+window.onload=function(){ 
+chayong();
+} 
+
+</script> 
+</body>
+</html>
