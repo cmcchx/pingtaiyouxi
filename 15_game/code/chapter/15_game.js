@@ -343,10 +343,11 @@ function runLevel(level, Display, andThen) {
   });
 }
 
-var nam=document.getElementById("uname").value;
-function runGame(plans, Display) {
-
-
+var nam;
+var xxx=12;
+function runGame(plans, Display,na) {
+	nam=na;
+xxx=123;
   function startLevel(n) {
     runLevel(new Level(plans[n]), Display, function(status) {
       if (status == "lost")

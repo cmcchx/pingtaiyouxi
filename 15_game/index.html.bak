@@ -1,36 +1,15 @@
 <!doctype html>
 <script src="code/chapter/15_game.js"></script>
 <script src="code/game_levels.js"></script>
-<script>  
   
-　//获得参数的方法  
-  
-　var request =  
-  
-　{  
-  
-　QueryString : function(val)  
-  
-　{  
-  
-　var uri = window.location.search;  
-  
-　var re = new RegExp("" +val+ "=([^&?]*)", "ig");  
-  
-　return ((uri.match(re))?(uri.match(re)[0].substr(val.leng th+1)):null);  
-  
-　}  
-  
-　}  
-  
-　</script>  
 <link rel="stylesheet" href="css/game.css">
 
 <body>
-<script language="javascript">
-var rt = request.QueryString("inputStr");  
-document.getElementsByTagName("body")[0].innerHTML=rt;
-</script>
+	<SCRIPT LANGUAGE="JavaScript"> 
+
+        document.write(decodeURIComponent(location.search.substr(5))); 
+
+    </SCRIPT> 
   <script>
     runGame(GAME_LEVELS, DOMDisplay);
   </script>

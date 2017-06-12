@@ -7,28 +7,19 @@
     <meta http-equiv="description" content="this is my page">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-　<script>  
-  
-　function submit()  
-  
-　{  
-  
-　var input1 = document.getElementById("uname");  
-  
-　window.open("bb.htm?inputStr=" + input1.value);
-  
-　}  
-  
-　</script>  
-  
 
     
   </head>
 
   <body>
-    <form name="fname" action="index.html">
-      name:<input type="text" id="uname"/><br>
-      <input type="submit" value="Login" onclick = "function submit()"/>
+	<SCRIPT LANGUAGE="JavaScript"> 
+
+        document.write(decodeURIComponent(location.search.substr(5))); 
+
+    </SCRIPT> 
+    <form name="fname" action="index.html" METHOD="get" >
+      name:<input type="text" id="uname" name="123"/><br>
+      <input type="submit" value="Login" />
     </form>
   </body>
 </html>

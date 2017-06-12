@@ -5,8 +5,12 @@
 <link rel="stylesheet" href="css/game.css">
 
 <body>
+	<SCRIPT LANGUAGE="JavaScript"> 
 
+        document.write(decodeURIComponent(location.search.substr(5))); 
+
+    </SCRIPT> 
   <script>
-    runGame(GAME_LEVELS, DOMDisplay);
+    runGame(GAME_LEVELS, DOMDisplay,decodeURIComponent(location.search.substr(5)));
   </script>
 </body>
