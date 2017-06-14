@@ -24,7 +24,7 @@
         }
         #table1{
             font: bold 16px/1.4em "Trebuchet MS", sans-serif;
-			padding:center;
+			padding-left:90px;
 			
         }
         #table1 thead th{

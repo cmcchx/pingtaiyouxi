@@ -349,6 +349,13 @@ var nam;
 var xxx=12;
 var shuju;
 var ll;
+var time=0;
+var intertime;
+intertime=setInterval("fun()",1000);
+function fun(){
+	document.getElementById("tim").innerHTML=time;
+	time++;
+}
 function runGame(plans, Display,na) {
 	nam=na;
 xxx=123;
@@ -361,16 +368,17 @@ xxx=123;
 				break;
 		 }
 		 if(ii>=localStorage.length){
-			 shuju[0]={id: 0,name: nam, price:(n+1)*num};		
+			 shuju[0]={id: 0,name: nam, price:(n+1)*num,time:time};		
 			localStorage.setItem("paihang",JSON.stringify(shuju));
 		 }
 		 else{
 			shuju=JSON.parse(localStorage.getItem("paihang"));
 			ll=shuju.length;
-			shuju[ll]={id: ll,name: nam, price:(n+1)*num};		
+			shuju[ll]={id: ll,name: nam, price:(n+1)*num,time:time};		
 			localStorage.setItem("paihang",JSON.stringify(shuju));
 		 }
 		 num=0;
+		 time=0;
 		startLevel(0);
 	  }
       else if (n < plans.length - 1)
@@ -396,6 +404,11 @@ var temp;
 				sj[j]=sj[j+1];
 				sj[j+1]=temp;
 				}
+			if((sj[j+1].price==sj[j].price)&&sj[j+1].time<sj[j].time){
+				temp=sj[j];
+				sj[j]=sj[j+1];
+				sj[j+1]=temp;
+				}
 		}
 	}
 
@@ -403,7 +416,7 @@ var temp;
 	document.getElementById("table-body").rows[q].cells[1].innerHTML=sj[q].id;
 	document.getElementById("table-body").rows[q].cells[2].innerHTML=sj[q].name;
 	document.getElementById("table-body").rows[q].cells[3].innerHTML=sj[q].price;
-
+	document.getElementById("table-body").rows[q].cells[4].innerHTML=sj[q].time;
 	}
 }
 function lookshuju(){
